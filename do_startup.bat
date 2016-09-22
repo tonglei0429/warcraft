@@ -1,1 +1,1 @@
-hexo s
+node app.js
