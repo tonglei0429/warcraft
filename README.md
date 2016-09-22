@@ -16,3 +16,5 @@ http://warcraft.net.cn
 >	app.listen(3000, function () {
 >	  console.log('http://127.0.0.1:3000!');
 >	});
+
+4. hexo init hexo
