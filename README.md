@@ -1,20 +1,12 @@
-# warcraft
+# 魔兽英雄传
 http://warcraft.net.cn
 
-开始：
-1. npm init
->	entry point: (index.js) app.js
+作为80后，从高中就开始打魔兽了，从少年玩到中年，其他的游戏都玩不来（魔兽也没玩好过。。。），就连做网站也想不出其他主题了。
 
-2. npm install express
+人生80%的时间都在浪费，既然做不到有意义，干脆让它有意思！
 
-3. create app.js
->	var express = require('express');
->	var app = express();
->	
->	app.use(express.static('public'));
->	
->	app.listen(3000, function () {
->	  console.log('http://127.0.0.1:3000!');
->	});
+希望这个网站能让我没有意义的时间变得有意思 :-)
 
-4. hexo init hexo
+---
+
+2016-10-20
