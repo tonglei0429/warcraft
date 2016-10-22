@@ -9,16 +9,31 @@
 	<link href='//cdn.webfont.youziku.com/webfonts/nomal/93263/19578/580b7d09f629d806108557b1.css' rel='stylesheet' type='text/css' />
 	<link href='//cdn.webfont.youziku.com/webfonts/nomal/93263/46587/580b7f31f629d806108557ba.css' rel='stylesheet' type='text/css' />
 	<style>
-		video {
-			position:fixed;
-			right:0;
-			bottom:0;
-			min-width: 100%;
-			min-height: 100%;
-			width: 100%;
-			height: auto;
-			z-index: -9999;
-		}
+	html {
+	  position: relative;
+	  min-height: 100%;
+	}
+	body {
+	  margin-bottom: 40px;
+	}
+	.footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		/* Set the fixed height of the footer here */
+		height: 40px;
+	}
+
+	video {
+		position:fixed;
+		right:0;
+		bottom:0;
+		min-width: 100%;
+		min-height: 100%;
+		width: 100%;
+		height: auto;
+		z-index: -9999;
+	}
 	</style>
 	<script src="/libs/jquery/jquery-3.1.0.min.js"></script>
 	<script src="/libs/bootstrap/js/bootstrap.min.js"></script>
@@ -73,7 +88,6 @@
 		</div>
 	</div>
 
-
 	<div class="container">
 
 		<div class="page-header" id="banner">
@@ -85,8 +99,15 @@
 			</div>
 		</div>
 
-		<div>
 	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<p class="text-muted">
+				声明：本网站纯属个人喜好，不宣传不推广，如果内容影响到您，请联系 <a href="mailto:me@tonglei.win">me@tonglei.win</a>，也可到我的 <a href="http://tonglei.win">个人博客</a> 留言我会立即处理，感谢来访。
+			</p>
+		</div>
+	</footer>
 
 	<video autoplay="autoplay" muted="muted" loop="loop" style="width:100%;">
 		<source src="videos/body-bg.mp4" />
