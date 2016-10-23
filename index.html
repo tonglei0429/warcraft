@@ -7,7 +7,8 @@
 	<link href="/favicon.png" rel="icon" />
 	<link href="/libs/bootstrap/css/bootstrap-superhero.min.css" rel="stylesheet" />
 	<link href='//cdn.webfont.youziku.com/webfonts/nomal/93263/19578/580b7d09f629d806108557b1.css' rel='stylesheet' type='text/css' />
-	<link href='//cdn.webfont.youziku.com/webfonts/nomal/93263/46587/580b7f31f629d806108557ba.css' rel='stylesheet' type='text/css' />
+	<link href='//cdn.webfont.youziku.com/webfonts/nomal/93263/146/580cd2c6f629d81b1c2195f8.css' rel='stylesheet' type='text/css' />
+	<link href='//cdn.webfont.youziku.com/webfonts/nomal/93263/47004/580cd1d9f629d81b1c2195f4.css' rel='stylesheet' type='text/css' />
 	<style>
 	html {
 	  position: relative;
@@ -23,7 +24,6 @@
 		/* Set the fixed height of the footer here */
 		height: 40px;
 	}
-
 	video {
 		position:fixed;
 		right:0;
@@ -33,6 +33,9 @@
 		width: 100%;
 		height: auto;
 		z-index: -9999;
+	}
+	.log-item {
+		margin-top: 20px;
 	}
 	</style>
 	<script src="/libs/jquery/jquery-3.1.0.min.js"></script>
@@ -94,8 +97,24 @@
 			<div class="row">
 				<div class="col-lg-8 col-md-7 col-sm-6">
 					<h1>YOU WILL DIE!</h1>
-					<p class="lead css6921220c816c4f">魔獸英雄傳</p>
+					<h2 class="css69740a05716c4f">颤抖吧，凡人！</h2>
 				</div>
+			</div>
+		</div>
+		
+		<div class="row log">
+			<div class="log-header col-lg-8 col-md-7 col-sm-6">
+				<h2 class="css6973d015616c4f">最近更新</h2>
+			</div>
+
+			<div class="log-item col-lg-8 col-md-7 col-sm-6">
+				<p>2016-10-23</p>
+				<p>魔兽正史电子书前两册重新排版。</p>
+			</div>
+			
+			<div class="log-item col-lg-8 col-md-7 col-sm-6">
+				<p>2016-10-23</p>
+				<p>增加高清图片素材</p>
 			</div>
 		</div>
 
@@ -109,11 +128,34 @@
 		</div>
 	</footer>
 
-	<video autoplay="autoplay" muted="muted" loop="loop" style="width:100%;">
-		<source src="videos/body-bg.mp4" />
+	<img id="" />
+	
+	<video id="body-bg-video" autoplay="autoplay" muted="muted" loop="loop" style="width:100%;">
 	</video>
 
 	<script>
+		window.onload = function() {
+			if(isPc()) {
+				$("#body-bg-video").attr("src", "/videos/body-bg.mp4");
+			} else {
+				$("body").css("background", "url('/images/body-bg.jpg') center center no-repeat");
+			}
+		};
+	
+		function isPc() {
+			var sUserAgent = navigator.userAgent.toLowerCase();
+            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+            var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+            var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+            var bIsAndroid = sUserAgent.match(/android/i) == "android";
+            var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+            var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+			
+			return !(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM);
+		}
+		
 		function howAboutNow() {
 			$.GET("http://v.juhe.cn/laohuangli/h?date=2014-09-11&key=您申请的KEY", function(text) {
 				console.log(text);
@@ -211,6 +253,8 @@
 //     "error_code": 0
 // }
 	</script>
+	
+	<!-- baidu tongji -->
 	<script>
 	var _hmt = _hmt || [];
 	(function() {
@@ -220,6 +264,7 @@
 		s.parentNode.insertBefore(hm, s);
 	})();
 	</script>
+	<!-- /baidu tongji -->
 
 </body>
 </html>
