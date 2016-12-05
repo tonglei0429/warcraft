@@ -85,7 +85,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="/war3maps/">魔兽争霸地图</a>
+						<a href="#">魔兽争霸地图</a>
 					</li>
 				</ul>
 			</div>
@@ -119,49 +119,6 @@
 		</div>
 	</footer>
 
-	<img id="" />
-	
-	<video id="body-bg-video" autoplay="autoplay" muted="muted" loop="loop" style="width:100%;">
-	</video>
-
-	<script>
-		window.onload = function() {
-			if(isPc()) {
-				$("#body-bg-video").attr("src", "/videos/body-bg.mp4");
-			} else {
-				$("body").css("background", "url('/images/body-bg.jpg') center center no-repeat");
-			}
-      
-      printLogs();
-		};
-
-		function isPc() {
-			var sUserAgent = navigator.userAgent.toLowerCase();
-            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
-            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
-            var bIsMidp = sUserAgent.match(/midp/i) == "midp";
-            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
-            var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
-            var bIsAndroid = sUserAgent.match(/android/i) == "android";
-            var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
-            var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
-			
-			return !(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM);
-		}
-    
-    function printLogs() {
-      $.getJSON("/update-log.json", function(data) {
-        for(var i = 0; i < data.length; i++) {
-          var log = data[i];
-          var logEl = '<div class="log-item col-lg-8 col-md-7 col-sm-6">';
-          logEl += "<p>" + log.time + "</p>";
-          logEl += log.url ? "<p><a href='" + log.url + "'>" + log.log + "</a></p>" : "<p>" + log.log + "</p>";
-          $("div.row.log").append(logEl);
-        }
-      });
-    }
-	</script>
-	
 	<!-- baidu tongji -->
 	<script>
 	var _hmt = _hmt || [];
