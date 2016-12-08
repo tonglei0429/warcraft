@@ -8,7 +8,6 @@
 	<link href="/libs/bootstrap/css/bootstrap-superhero.min.css" rel="stylesheet" />
 	<link href='//cdn.webfont.youziku.com/webfonts/nomal/93263/19578/580b7d09f629d806108557b1.css' rel='stylesheet' type='text/css' />
 	<link href='//cdn.webfont.youziku.com/webfonts/nomal/93263/146/580cd2c6f629d81b1c2195f8.css' rel='stylesheet' type='text/css' />
-	<link href='//cdn.webfont.youziku.com/webfonts/nomal/93263/47004/580cd1d9f629d81b1c2195f4.css' rel='stylesheet' type='text/css' />
   <link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css' />
 	<style>
 	html {
@@ -24,19 +23,6 @@
 		width: 100%;
 		/* Set the fixed height of the footer here */
 		height: 40px;
-	}
-	video {
-		position:fixed;
-		right:0;
-		bottom:0;
-		min-width: 100%;
-		min-height: 100%;
-		width: 100%;
-		height: auto;
-		z-index: -9999;
-	}
-	.log-item {
-		margin-top: 20px;
 	}
 	</style>
 	<script src="/libs/jquery/jquery-3.1.0.min.js"></script>
@@ -56,36 +42,31 @@
 			<div class="navbar-collapse collapse" id="navbar-main">
 				<ul class="nav navbar-nav">
 					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="heros">英雄传记 <span class="caret"></span></a>
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="heros">魔兽英雄 <span class="caret"></span></a>
 						<ul class="dropdown-menu" aria-labelledby="heros">
 							<li><a href="#">全部</a></li>
 							<li class="divider"></li>
-							<li><a href="#">没有腿</a></li>
-							<li><a href="#">一条腿</a></li>
-							<li><a href="#">两条腿</a></li>
-							<li><a href="#">三条腿</a></li>
-							<li><a href="#">四条腿</a></li>
-							<li><a href="#">好多腿</a></li>
+              <li><a href="#">人类</a></li>
 						</ul>
 					</li>
 					<li>
-						<a href="../help/">历史典籍</a>
+						<a href="#">魔兽文学</a>
 					</li>
 					<li>
-						<a href="http://news.warcraft.net.cn">新闻采集</a>
+						<a href="http://news.warcraft.net.cn">魔兽新闻</a>
 					</li>
 					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="resources">资源 <span class="caret"></span></a>
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="resources">下载 <span class="caret"></span></a>
 						<ul class="dropdown-menu" aria-labelledby="resources">
-							<li><a href="#">全部</a></li>
+              <li><a href="/downloads/">资源主页<a></li>
+              <li class="divider"></li>
+							<li><a href="#">魔兽地图</a></li>
+              <li><a href="#">游戏补丁</a></li>
 							<li class="divider"></li>
 							<li><a href="#">音频</a></li>
 							<li><a href="#">图片</a></li>
 							<li><a href="#">视频</a></li>
 						</ul>
-					</li>
-					<li>
-						<a href="#">魔兽争霸地图</a>
 					</li>
 				</ul>
 			</div>
@@ -103,18 +84,28 @@
 			</div>
 		</div>
 		
-		<div class="row log">
-			<div class="log-header col-lg-8 col-md-7 col-sm-6">
-				<h2 class="css6973d015616c4f">最近更新</h2>
-			</div>
-    </div>
+    <h3>Mimiya 地图</h3>
+    <ul>
+      <li><a target="_blank" href="http://oss.mimya.net/download/IMBA_20049.rar">IMBA_20049.rar</a></li>
+      <li><a target="_blank" href="http://oss.mimya.net/download/IMBA_20048.rar">IMBA_20048.rar</a></li>
+      <li><a target="_blank" href="http://oss.mimya.net/download/IMBA_20047.rar">IMBA_20047.rar</a></li>
+      <li><a target="_blank" href="http://oss.mimya.net/download/IMBA_20046.rar">IMBA_20046.rar</a></li>
+      <li><a target="_blank" href="http://oss.mimya.net/download/IMBA_20045.rar">IMBA_20045.rar</a></li>
+      <li><a target="_blank" href="http://oss.mimya.net/download/IMBA_20044.rar">IMBA_20044.rar</a></li>
+    </ul>
+    
+    <h3>魔兽游戏补丁</h3>
+    <ul>
+      <li><a target="_blank" href="http://bd3.962.net/war31.27a.rar">1.27游戏补丁</a></li>
+      <li><a target="_blank" href="http://war3down1.uuu9.com/war3/201207/[1.24]%E9%AD%94%E5%85%BDRPG%E5%9C%B0%E5%9B%BE8M%E8%81%94%E6%9C%BA%E8%A1%A5%E4%B8%81.rar">8M游戏补丁</a></li>
+    </ul>
 
 	</div>
 
 	<footer class="footer">
 		<div class="container">
 			<p class="text-muted">
-				声明：本网站纯属个人喜好，不宣传不推广，如果内容影响到您，请联系 <a href="mailto:me@tonglei.win">me@tonglei.win</a>，也可到我的 <a href="http://tonglei.win">个人博客</a> 留言我会立即处理，感谢来访。
+				声明：本网站纯属个人喜好，不宣传不推广，如果内容影响到您，请联系 <a href="mailto:me@tonglei.win">me@tonglei.win</a>，也可到我的 <a target="_blank" href="http://tonglei.win">个人博客</a> 留言我会立即处理，感谢来访。
 			</p>
 		</div>
 	</footer>
